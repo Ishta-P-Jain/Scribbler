@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+
+.logo h1 {
+    font-family: 'Montez', cursive;
+    font-size: 40px;
+    margin: 0;
+}
+
+.logo p {
+    font-family: 'Ubuntu Mono', monospace;
+    margin: 0;
+}
+
+.auth-buttons button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    background: rgba(0,0,0,0.5);
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+}
+
+.modal-content {
+    background: white;
+    width: 350px;
+    margin: 100px auto;
+    padding: 20px;
+    position: relative;
+    padding-right: 20px;
+}
+
+.modal-content input,
+.modal-content textarea {
+    width: 100%;
+    margin: 8px 0;
+    padding: 8px;
+}
+
+.close {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+.green {
+    background: green;
+    color: white;
+    border: none;
+    padding: 8px;
+    width: 100%;
+}
+
+.link {
+    color: blue;
+    cursor: pointer;
+}
+body{
+    background-image: url("A:/scribbler/images/image1.png");
+    background: no-repeat;
+    background-size: cover;
+}
+

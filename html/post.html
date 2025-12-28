@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Post</title>
+
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/post.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+<div class="header">
+    <div class="logo">
+        <h1>ScriBBler</h1>
+        <p>Explore, Imagine, Create</p>
+    </div>
+</div>
+
+<h2 id="title"></h2>
+
+<div class="post-header">
+    <p id="author"></p>
+    <button id="editBtn" onclick="toggleEdit()">
+        Edit <i class="fa fa-edit"></i>
+    </button>
+</div>
+
+<p id="content"></p>
+
+<button onclick="likePost()">👍 <span id="likeBtnText">Like</span></button>
+<p id="likes">Be the first one to like this!</p>
+
+<input id="commentInput" placeholder="Leave a comment...">
+<button onclick="addComment()">Comment</button>
+
+<div id="comments"></div>
+
+<script src="../scripts/post.js"></script>
+</body>
+</html>

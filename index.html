@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ScriBBler</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body style="background-image: url(images/image1.png);">
+
+<!-- HEADER -->
+<div class="header">
+    <div class="logo">
+        <h1>ScriBBler</h1>
+        <p>Explore, Imagine, Create</p>
+    </div>
+    <div class="auth-buttons">
+        <button onclick="openSignIn()">Sign In</button>
+        <button onclick="openSignUp()">Sign Up</button>
+    </div>
+</div>
+
+<!-- CENTER BUTTONS -->
+<div class="home-buttons">
+    <button onclick="location.href='html/postslist.html'">All Posts</button>
+    <button onclick="openCreatePost()">Create Post</button>
+</div>
+
+<!-- SIGN UP MODAL -->
+<div id="signupModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeSignUp()">&times;</span>
+        <h2>Get Started</h2>
+        <label for="name">Name</label>
+        <input type="text" placeholder="Enter your name" required>
+        <label for="username">username</label>
+        <input type="text" placeholder="Enter your username" required>
+        <label for="password">password</label>
+        <input type="password" placeholder="Enter your password" required>
+        <label for="confirmPassword">Confirm Password</label>   
+        <input type="password" placeholder="Re-enter your password" required>
+        <button class="green" onclick="closeSignUp()">Sign Up</button>
+    </div>
+</div>
+
+<!-- SIGN IN MODAL -->
+<div id="signinModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeSignIn()">&times;</span>
+        <h2>Welcome Back!</h2>
+        <input type="text" placeholder="Enter your username" required>
+        <input type="password" placeholder="Enter your password" required>
+        <button class="green" onclick="closeSignIn()">Sign In</button>
+        <p>Not a member? <span class="link" onclick="switchToSignUp()">Sign Up</span></p>
+    </div>
+</div>
+
+<!-- CREATE POST MODAL -->
+<div id="createPostModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeCreatePost()">&times;</span>
+        <h2>Pen Your Post</h2>
+        <input type="text" placeholder="Enter title of your post">
+        <textarea placeholder="Enter the contents of your post"></textarea>
+        <button class="green" onclick="createPost()">Create</button>
+    </div>
+</div>
+
+<script src="scripts/common.js"></script>
+<script src="scripts/index.js"></script>
+
+</body>
+</html>
