@@ -15,8 +15,7 @@ The project focuses on building the **user interface and client-side functionali
 - Individual post view
 - Edit and save post content
 - Like functionality with dynamic count
-- Comment section with latest comments displayed first
-- Responsive layout (two posts per row)
+- Responsive layout 
 - Uses browser **localStorage** for frontend data persistence
 
 ---
@@ -25,6 +24,4 @@ The project focuses on building the **user interface and client-side functionali
 
 - HTML5
 - CSS3
-- JavaScript (Vanilla JS)
-- Font Awesome
-- Google Fonts
+- JavaScript 
