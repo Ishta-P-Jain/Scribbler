@@ -12,7 +12,6 @@ The project focuses on building the **user interface and client-side functionali
 - Modal-based **Sign Up** and **Sign In** UI
 - Create Post modal
 - Dynamic listing of posts on the **All Posts** page
-- Individual post view
 - Edit and save post content
 - Like functionality with dynamic count
 - Responsive layout 
